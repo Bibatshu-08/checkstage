@@ -1,0 +1,28 @@
+@import "../header-footer/header.css";
+@import "../header-footer/ham.css";
+@import "../templates/museum-nav.css";
+@import "../templates/cards-insides.css";
+@import "../templates/cards-template.css";
+
+.name-container a{
+    text-decoration: none;
+    color: #141414;
+}
+.name-container>a:visited{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.cards-container{
+    height: 64vh;
+    width: 100%;
+    margin-top: -1%;
+    background-color: #f09c6d;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #e8daba transparent;
+}

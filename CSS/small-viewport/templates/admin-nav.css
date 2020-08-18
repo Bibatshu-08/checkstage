@@ -1,0 +1,45 @@
+.sub-navigation{
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 90vh;
+    background-color: #f0f0ff;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    z-index: 50;
+    box-shadow: -2px 0px 10px -5px #141414;
+}
+.icon-space{
+    box-shadow: 5px 0px 6px -8px #141414, -5px 0px 6px -8px #141414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-nav-icons{
+    width: 25px;
+    height: 25px;
+}
+.icon-subtitle{
+    font-size: 75%;
+    text-align: center;
+    font-family: 'Barlow', sans-serif, 'Mukta', sans-serif;
+    color: gray;
+}
+.icon-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.icon-space a{
+    text-decoration: none;
+    color: gray;
+}
+.transparent-text{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    margin-top: -30px;
+    margin-left: 0%;
+}

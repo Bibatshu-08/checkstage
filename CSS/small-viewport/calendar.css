@@ -1,0 +1,116 @@
+@import "header-footer/header.css";
+@import "header-footer/ham.css";
+@import "header-footer/footer.css";
+
+.name-container a{
+    text-decoration: none;
+    color: #141414;
+}
+.name-container>a:visited{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.main-container{
+    height: 74vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slide 40s infinite;
+    background-position: center;
+}
+.image-slideshow{
+    animation: slide 2s;
+}
+.construction{
+    font-family: 'Barlow', sans-serif;
+    font-size: 150%;
+    color: #f5f5f5;
+    font-family: 'La Belle Aurore', cursive;
+    top: 60%;
+    position: absolute;
+}
+.construction a{
+    color: #f5f5f5;
+}
+.construction a:hover{
+    color: #fec52a;
+}
+@keyframes slide{
+    0% {
+        background-image: url('../../ASSETS/calendar/1.jpg');     
+    }
+    5% {
+        background-image: url('../../ASSETS/calendar/2.jpg');     
+    }
+    10% {
+        background-image: url('../../ASSETS/calendar/3.jpg');     
+    }
+    15% {
+        background-image: url('../../ASSETS/calendar/4.jpg');     
+    }
+    20% {
+        background-image: url('../../ASSETS/calendar/5.jpg');     
+    }
+    25% {
+        background-image: url('../../ASSETS/calendar/6.jpg');     
+    }
+    30% {
+        background-image: url('../../ASSETS/calendar/7.jpg');     
+    }
+    35% {
+        background-image: url('../../ASSETS/calendar/8.jpg');     
+    }
+    40% {
+        background-image: url('../../ASSETS/calendar/9.jpg');     
+    }
+    45% {
+        background-image: url('../../ASSETS/calendar/10.jpg');     
+    }
+    50% {
+        background-image: url('../../ASSETS/calendar/11.jpg');     
+    }
+    55% {
+        background-image: url('../../ASSETS/calendar/12.jpg');     
+    }
+    60% {
+        background-image: url('../../ASSETS/calendar/13.jpg');     
+    }
+    65% {
+        background-image: url('../../ASSETS/calendar/14.jpg');     
+    }
+    70% {
+        background-image: url('../../ASSETS/calendar/15.jpg');     
+    }
+    75% {
+        background-image: url('../../ASSETS/calendar/16.jpg');     
+    }
+    80% {
+        background-image: url('../../ASSETS/calendar/17.jpg');     
+    }
+    85% {
+        background-image: url('../../ASSETS/calendar/18.jpg');     
+    }
+    90% {
+        background-image: url('../../ASSETS/calendar/19.jpg');     
+    }
+    95% {
+        background-image: url('../../ASSETS/calendar/20.jpg');     
+    }
+    100% {
+        background-image: url('../../ASSETS/calendar/1.jpg');     
+    }
+}
+@media only screen and (max-width:500px){
+    .construction{
+        left: 7%;
+        font-size: 120%;
+        text-align: center;
+    }
+}

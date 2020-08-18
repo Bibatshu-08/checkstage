@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Average+Sans&family=Bebas+Neue&family=Kalam&family=La+Belle+Aurore&family=M+PLUS+1p:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+.nav-items>a{
+    color: #f5f5f5;
+}
+.white-head a{
+    color: #141414;
+}
+/* header modification */
+.header{
+    height: 16vh;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+/* white part of the header  */
+.white-head{
+    height: 8vh;
+    display: grid;
+    grid-template-columns: 12% 5% 27% 12% 27% 5% 12%;
+    background-color: #f5f5f5;
+}
+
+/* centering all items in all 3 layers  */
+.logo, .heritage-name, .nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* making all icon heights consistent */
+.official-logo, .brand-logo{
+    height: 48px;
+}
+.link-icon{
+    height: 35px;
+    margin-top: 15%;
+
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lang-nepali{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.lang-english{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+/* red part of the header  */
+.red-head{
+    height: 7.2vh;
+    background-color: #d30d0d;
+    display: grid;
+    grid-template-columns: 14% 29% 14% 29% 14%;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #f5f5f5;
+    letter-spacing: 0.1em;
+}
+/* yellow part of the header  */
+.yellow-head{
+    height: 0.8vh;
+    background-color: #fec52a;
+    display: grid;
+    grid-template-columns: 14% 29% 14% 29% 14%;
+    position: relative;
+    box-shadow: 0px 5px 6px -2px #141414;
+}
+/* Tooltip  */
+/* make the words home, office appear  */
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #141414;
+    color: #f5f5f5;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    margin-top: 8vh;
+}
+  
+.icons:hover .tooltiptext, .tooltip-img:hover .tooltiptext{
+    visibility: visible;
+}

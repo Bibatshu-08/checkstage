@@ -1,0 +1,39 @@
+.sub-navigation{
+    height: 84vh;
+    width: 6%;
+    position: absolute;
+    top: 16vh;
+    left:94%;
+    background-color: #f0f0ff;
+    display: grid;
+    grid-template-rows: 32% repeat(4, 17%);
+    z-index: 50;
+    box-shadow: -2px 0px 10px -5px #141414;
+}
+.icon-space{
+    box-shadow: 0px -5px 6px -8px #141414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-nav-icons{
+    width: 45px;
+    height: 45px;
+}
+.icon-subtitle{
+    font-size: 70%;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    color: gray;
+}
+.icon-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.icon-space a{
+    text-decoration: none;
+    color: gray;
+}

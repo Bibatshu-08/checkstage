@@ -1,0 +1,84 @@
+@import "header-footer/header.css";
+@import "header-footer/ham.css";
+@import "header-footer/footer.css";
+@import "templates/museum-nav.css";
+
+.name-container a{
+    text-decoration: none;
+    color: #141414;
+}
+.name-container>a:visited{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.main-container{
+    height: 64vh;
+    width: 100%;
+    margin-top: -1%;
+}
+.information-box{
+    width: 100%;
+    height: 100%;
+    background-color: #f09c6d;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+}
+.text-side{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.text{
+    height: 90%;
+    width: 88%;
+    line-height: 1.3em;
+    background-color: #fff3d1;
+    overflow-y: scroll;
+    border-radius: 5px;
+    box-shadow: 5px 5px 6px -6px #141414;
+}
+.text p{
+    width: 95%;
+    margin: 10px auto;
+}
+.image-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    width: 55%;
+    /* height: 75%; */
+    display: flex;
+    justify-content: center;
+}
+.museum-home{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 7px 7px 6px -6px #141414;
+}
+
+@media only screen and (min-width: 470px){
+    .image{
+        width: 45%;
+    }
+}
+@media only screen and (min-width: 570px){
+    .image{
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 650px){
+    .image{
+        width: 35%;
+    }
+}
+@media only screen and (min-width: 720px){
+    .image{
+        width: 27%;
+    }
+}

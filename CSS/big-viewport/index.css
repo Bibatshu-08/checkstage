@@ -1,0 +1,30 @@
+@import "header-footer/header.css";
+@import "body/home-body.css";
+@import "header-footer/footer.css";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    
+}
+a:visited{
+    text-decoration: none;
+}
+.nav-items>a, .contact-info>a, .info>a{
+    color: #f5f5f5;
+}
+.white-head a{
+    color: #141414;
+}
+html{
+    scroll-snap-type: y mandatory;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(50vh);
+    scroll-padding-top: 16vh;
+    scroll-behavior: smooth;
+}

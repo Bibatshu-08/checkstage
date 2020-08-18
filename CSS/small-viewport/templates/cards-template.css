@@ -1,0 +1,41 @@
+/* cards design */
+.cards{
+    min-width: 30vw;
+    height: 58vh;
+    background-color: #ffefc2;
+    margin-left: 2.5vw;
+    border-radius: 2px;
+    z-index:10;
+    box-shadow: 5px 5px 20px -4px #141414;   
+    overflow-x: hidden;
+}
+/* Space at the end of the cards */
+ .cards-container::after {
+    content: ' '; 
+    min-width: 4vw;
+} 
+
+.back-button{
+    position: absolute;
+    left: 2%;
+    top: 26.5vh;
+    display: none;
+    z-index: 1000;
+}
+.back{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+    .cards{
+        min-width: 45vw;
+    }
+
+}
+@media only screen and (max-width: 426px){
+    .back-button{
+        left: 4%;
+    }
+}

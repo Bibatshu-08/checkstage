@@ -1,0 +1,65 @@
+@import "header-footer/header.css";
+@import "header-footer/footer.css";
+@import "templates/museum-nav.css";
+
+.main-container{
+    height: 84vh;
+    width: 100%;
+}
+.information-box{
+    width: 94%;
+    height: 100%;   
+    background-color: #f09c6d;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+.text-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.text{
+    height: 69vh;
+    width: 95%;
+    line-height: 1.6em;
+    font-family: 'Neuton', serif;
+    background-color: #fff3d1;
+    overflow-y: scroll;
+    border-radius: 5px;
+    box-shadow: 5px 5px 6px -6px #141414;
+}
+.text p{
+    width: 90%;
+    margin: 30px auto;
+    font-size: 105%;
+}
+.image-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    width: 95%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+.museum-home{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 7px 7px 6px -6px #141414;
+}
+/* modify the scrollbar thumb color */
+.text::-webkit-scrollbar {
+    width: 7px;
+    height: 5px;
+}
+.text::-webkit-scrollbar-thumb {
+    height: 2px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    -webkit-border-radius: 7px;
+    background-color:#d4855f;
+    -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}

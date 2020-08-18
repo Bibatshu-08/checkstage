@@ -1,0 +1,27 @@
+@import "header-footer/header.css";
+@import "header-footer/ham.css";
+@import "header-footer/footer-m.css";
+@import "body/home-body.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(50vh);
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 26vh;
+    -webkit-overflow-scrolling: touch;
+}
+.name-container a{
+    text-decoration: none;
+    color: #141414;
+}
+.name-container>a:visited{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}

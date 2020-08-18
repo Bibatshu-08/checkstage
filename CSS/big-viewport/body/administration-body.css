@@ -1,0 +1,130 @@
+@import "../header-footer/header.css";
+@import "../templates/admin-nav.css";
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    /* border: 1px solid red; */
+
+}
+.title{
+    margin-top: 8vh;
+    font-family: 'Barlow';
+    font-weight: 800;
+    color: #d4855f;
+}
+.content-container{
+    width: 94%;
+    /* overflow-y: scroll; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff3d1;
+}
+#objectives{
+    width: 90%;
+    padding-top: 20vh ;
+    margin: auto;
+    font-family: 'Barlow', serif;
+    margin-bottom: 20vh;
+}
+.objectives-list{
+    width: 90%;
+    margin-left: 5%;
+}
+#objectives h2, h1{
+    margin-bottom: 4vh;
+    color: #d30d0d;
+}
+ol{
+    list-style: none;
+    margin-left: 2em;
+}
+li{
+    margin-top: 2vh;
+    font-size: 115%;
+    counter-increment: count-me;
+}
+
+li::before {
+    content: counter(count-me) ". ";
+    display: block;
+    position: relative;
+    max-width: 0px;
+    max-height: 0px;
+    left: -1.3em;
+    top: .05em;
+    color: #d4855f;
+    font-weight: bold;
+}
+
+#about{
+    width: 90%;
+    padding-top: 20vh;
+    margin: auto;    
+    font-family: 'Barlow';
+}
+.organization-chart, .organization-chart-2{
+    width: 90%;
+    margin-left: 5%;
+    color: #d30d0d;
+    margin-top: 4vh;
+    font-size: 120%;
+    
+}
+.organization-chart-2{
+    width: 100%;
+    margin-left: 0%;
+}
+
+#staff{
+    width: 100%;
+    font-family: 'Barlow';
+}
+#staff h1{
+    margin-left: 8%;
+    padding-top: 18vh;
+}
+.staff{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.person{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    height: 35vh;
+}
+.image, .name{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.name{
+    width: 100%;
+    text-align: center;
+}
+.name h4, h5{
+    font-size: 120%;
+}
+.name h4{
+    font-weight: 800;
+}
+.name h6{
+    font-size: 80%;
+}
+@media only screen and (max-width: 950px){
+    .name h4, h5{
+        font-size: 100%;
+    }
+    .name h6{
+        font-size: 70%;
+    }
+}

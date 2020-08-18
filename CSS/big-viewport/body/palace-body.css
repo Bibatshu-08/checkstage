@@ -1,0 +1,39 @@
+@import "../header-footer/header.css";
+@import "../templates/palace-nav.css";
+@import "../templates/cards-template.css";
+@import "../templates/cards-insides.css";
+body{
+    z-index: 0;
+    overflow-x: hidden;
+}
+
+.cards-container{
+    height: 84vh;
+    background-color: #f09c6d;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll !important;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #e8daba transparent;
+    align-items: center;
+}
+*::-webkit-scrollbar {
+    height: 5px;
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    width: 5px;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #bb6c3e;
+    border-radius: 9px;
+    background-clip: padding-box;
+    height: 3px;
+    width: 4px;
+    box-shadow: 10px 0px 6px -8px #141414;
+}
+
+
